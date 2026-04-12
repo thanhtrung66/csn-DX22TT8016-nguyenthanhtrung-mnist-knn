@@ -30,3 +30,8 @@ K nhỏ giúp mô hình phản ứng tốt với dữ liệu chi tiết, nhưng 
 ## 📌 Cách chạy
 pip install -r requirements.txt  
 python train.py
+
+## 📦 Thư viện sử dụng
+- numpy: xử lý dữ liệu số
+- scikit-learn: xây dựng mô hình KNN
+- matplotlib: vẽ biểu đồ
