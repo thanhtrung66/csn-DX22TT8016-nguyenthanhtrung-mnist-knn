@@ -18,6 +18,7 @@
 ## 📈 Tối ưu tham số K
 Biểu đồ dưới đây thể hiện độ chính xác theo các giá trị K khác nhau:
 ![Accuracy vs K](accuracy_vs_k.png)
+
 Kết quả cho thấy giá trị K tối ưu là **K = 1** với độ chính xác cao nhất.
 
 ## 📷 Ma trận nhầm lẫn
