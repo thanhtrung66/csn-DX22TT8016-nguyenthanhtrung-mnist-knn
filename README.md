@@ -3,11 +3,14 @@
 ## 📌 Giới thiệu
 Đề tài sử dụng thuật toán K-Nearest Neighbors (KNN) để phân loại chữ số viết tay từ bộ dữ liệu MNIST.
 
-## ⚙️ Công nghệ sử dụng
-- Python
+## ⚙️ Công nghệ sử dụng<br>
+Ngôn ngữ lập trình<br>
+- Python<br>
+Thư Viện<br>
 - Scikit-learn
 - NumPy
 - Matplotlib
+- Pandas
 
 ## 📊 Kết quả
 - Accuracy: ~97%
@@ -49,3 +52,4 @@ Trường hợp 2: py train.py<br>
 - numpy: xử lý dữ liệu số
 - scikit-learn: xây dựng mô hình KNN
 - matplotlib: vẽ biểu đồ
+- pandas: xử lý, phân tích và quản lý dữ liệu dạng bảng
