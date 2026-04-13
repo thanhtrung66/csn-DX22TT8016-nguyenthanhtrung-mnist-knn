@@ -1,8 +1,9 @@
 from sklearn.datasets import fetch_openml
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.metrics import accuracy_score, confusion_matrix
+from sklearn.metrics import accuracy_score, confusion_matrix, ConfusionMatrixDisplay
 import matplotlib.pyplot as plt
+import numpy as np
 
 print("Loading MNIST...")
 mnist = fetch_openml('mnist_784', version=1)
@@ -51,14 +52,24 @@ model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 
 # ====== CONFUSION MATRIX ======
-cm = confusion_matrix(y_test, y_pred)
+labels = list(range(10))  # MNIST có 0–9
 
-plt.figure()
-plt.imshow(cm, cmap='Blues')
-plt.title("Confusion Matrix")
-plt.colorbar()
-plt.xlabel("Predicted")
-plt.ylabel("Actual")
+cm = confusion_matrix(y_test, y_pred, labels=labels)
+
+# In ra console có label rõ ràng
+print("\nConfusion Matrix:")
+print("Labels (0-9):")
+print(cm)
+
+# ====== Vẽ CONFUSION MATRIX ====== 
+disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=labels)
+
+fig, ax = plt.subplots(figsize=(8, 8))
+disp.plot(ax=ax, cmap='Blues', values_format='d')
+
+plt.title("Confusion Matrix (MNIST)")
+plt.xlabel("Predicted label")
+plt.ylabel("True label")
 
 plt.savefig("confusion_matrix.png")
 print("Saved confusion_matrix.png")
