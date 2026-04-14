@@ -25,13 +25,13 @@
 Biểu đồ dưới đây thể hiện độ chính xác theo các giá trị K khác nhau:
 ![Accuracy vs K](accuracy_vs_k.png)
 
-Kết quả cho thấy giá trị $K$ tối ưu là **$K = 1$** với độ chính xác cao nhất.
+Kết quả cho thấy giá trị $K$ tối ưu là **K = 1** với độ chính xác cao nhất.
 
 ## 📈 Phân tích tham số $K$ (Hyperparameter Tuning)
 
 Trong đồ án này, mình đã thực hiện khảo sát giá trị $K$ từ 1 đến 10 để tìm ra điểm tối ưu cho mô hình.
 
-- **Tại sao chọn phạm vi $1-10$?**
+- **Tại sao chọn phạm vi 1-10?**
     - **Đặc thù dữ liệu:** Với bộ dữ liệu MNIST, các đặc trưng đã được chuẩn hóa tốt, các láng giềng gần nhất thường mang đặc điểm rất giống nhau. Qua thực nghiệm, giá trị $K$ nhỏ (thường là số lẻ < 10) đem lại độ chính xác cao nhất (trên 96%).
     - **Hiệu năng:** Vì KNN là thuật toán "Lazy Learning", việc tăng $K$ quá lớn sẽ làm tăng khối lượng tính toán và thời gian dự đoán mà không cải thiện đáng kể độ chính xác.
     - **Tránh Underfitting:** Khi $K$ quá lớn, ranh giới phân loại giữa các chữ số bị làm mờ, dẫn đến mô hình bị đơn giản hóa quá mức.
@@ -100,4 +100,4 @@ File: `train.py` phù hợp để làm đồ án và báo cáo chuyên sâu
 
 Trong thực tế, nên kết hợp ưu điểm của cả hai file:
 
-Đâu tiên dùng `train.py` để tìm K tối ưu, sau đó bổ sung thêm `Precision`, `Recall`, `F1-score` để đánh giá toàn diện mô hình.
+Đâu tiên dùng `train.py` để tìm $K$ tối ưu, sau đó bổ sung thêm `Precision`, `Recall`, `F1-score` để đánh giá toàn diện mô hình.
