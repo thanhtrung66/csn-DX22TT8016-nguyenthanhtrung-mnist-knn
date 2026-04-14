@@ -48,6 +48,53 @@ Bước 2: Chạy code<br>
 Trường hợp 1: py knn_mnist.py<br>
 Trường hợp 2: py train.py<br>
 
+📌 Chi tiết từng file
+🔹 knn_mnist.py
+Sử dụng giá trị K cố định (K = 3) để huấn luyện mô hình
+Tính đầy đủ các chỉ số đánh giá:
+Accuracy
+Precision
+Recall
+F1-score
+Hiển thị ma trận nhầm lẫn dưới dạng hình ảnh đơn giản
+
+👉 Ưu điểm:
+
+Code ngắn gọn, dễ hiểu
+Phù hợp để minh họa thuật toán KNN cơ bản
+
+👉 Nhược điểm:
+
+Không kiểm tra nhiều giá trị K → chưa tối ưu mô hình
+Confusion Matrix chưa hiển thị rõ nhãn
+
+🔹 train.py
+Thử nghiệm nhiều giá trị K từ 1 đến 10
+Vẽ biểu đồ Accuracy vs K để lựa chọn K tối ưu
+Tự động chọn K tốt nhất và huấn luyện lại mô hình
+Hiển thị Confusion Matrix với đầy đủ nhãn (0–9)
+Lưu các biểu đồ dưới dạng file .png
+
+👉 Ưu điểm:
+
+Có quy trình tối ưu hyperparameter rõ ràng
+Trực quan hóa dữ liệu tốt, phù hợp cho báo cáo
+Confusion Matrix hiển thị chuyên nghiệp
+
+👉 Nhược điểm:
+
+Chưa tính các chỉ số như Precision, Recall, F1-score
+Thời gian chạy lâu hơn do thử nhiều giá trị K
+
+🎯 Kết luận
+File knn_mnist.py phù hợp để minh họa và học thuật toán
+File train.py phù hợp để làm đồ án và báo cáo chuyên sâu
+
+👉 Trong thực tế, nên kết hợp ưu điểm của cả hai file:
+
+Dùng train.py để tìm K tối ưu
+Sau đó bổ sung thêm Precision, Recall, F1-score để đánh giá toàn diện mô hình
+
 ## 📦 Thư viện sử dụng
 - numpy: xử lý dữ liệu số
 - scikit-learn: xây dựng mô hình KNN
