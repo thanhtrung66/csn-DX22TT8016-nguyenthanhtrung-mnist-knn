@@ -26,11 +26,11 @@
 * **Bước 1**: cài đặt thư viện<br>
 Gõ lệnh `py -m pip install -r requirements.txt`<br>
 
-📦 requirements.txt
-numpy
-scikit-learn
-matplotlib
-pandas
+📦 requirements.txt<br>
+* `numpy`<br>
+* `scikit-learn`<br>
+* `matplotlib`<br>
+* `pandas`<br>
 
 * **Bước 2:** Chạy code<br>
 
