@@ -79,8 +79,8 @@ Confusion Matrix chưa hiển thị rõ nhãn
 
 Thử nghiệm nhiều giá trị K từ 1 đến 10
 Vẽ biểu đồ Accuracy vs K để lựa chọn K tối ưu
-Tự động chọn $K$ tốt nhất và huấn luyện lại mô hình
-Hiển thị Confusion Matrix với đầy đủ nhãn $(0–9)$
+Tự động chọn _K_ tốt nhất và huấn luyện lại mô hình
+Hiển thị Confusion Matrix với đầy đủ nhãn (0–9)
 Lưu các biểu đồ dưới dạng file `.png`
 
 **Ưu điểm:**
@@ -92,7 +92,7 @@ Confusion Matrix hiển thị chuyên nghiệp
 **Nhược điểm:**
 
 Chưa tính các chỉ số như `Precision`, `Recall`, `F1-score`
-Thời gian chạy lâu hơn do thử nhiều giá trị $K$
+Thời gian chạy lâu hơn do thử nhiều giá trị _K_
 
 🎯 **Kết luận**
 File: `knn_mnist.py` phù hợp để minh họa và học thuật toán<br>
@@ -100,4 +100,4 @@ File: `train.py` phù hợp để làm đồ án và báo cáo chuyên sâu
 
 Trong thực tế, nên kết hợp ưu điểm của cả hai file:
 
-Đâu tiên dùng `train.py` để tìm $K$ tối ưu, sau đó bổ sung thêm `Precision`, `Recall`, `F1-score` để đánh giá toàn diện mô hình.
+Đâu tiên dùng `train.py` để tìm _K_ tối ưu, sau đó bổ sung thêm `Precision`, `Recall`, `F1-score` để đánh giá toàn diện mô hình.
