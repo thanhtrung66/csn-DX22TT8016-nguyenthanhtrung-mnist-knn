@@ -16,10 +16,10 @@
 - bộ dữ liệu **MNIST**
 
 ## 📊 Kết quả
-- `Accuracy`: ~$97$%
-- `Precision`: ~$97$%
-- `Recall`: ~$97$%
-- `F1-score`: ~$97$%
+- `Accuracy`: ~97%
+- `Precision`: ~97%
+- `Recall`: ~97%
+- `F1-score`: ~97%
 
 ## 📈 Tối ưu tham số $K$
 Biểu đồ dưới đây thể hiện độ chính xác theo các giá trị K khác nhau:
