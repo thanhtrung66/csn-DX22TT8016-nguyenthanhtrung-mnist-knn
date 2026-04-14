@@ -1,7 +1,7 @@
-# Nhận dạng chữ số viết tay bằng KNN, sử dụng thuật toán KNN để nhận diện chữ số viết tay từ bộ dữ liệu MNIST
+# Nhận dạng chữ số viết tay bằng KNN
 
 ## 📌 Giới thiệu
-Đề tài sử dụng thuật toán K-Nearest Neighbors (KNN) để phân loại chữ số viết tay từ bộ dữ liệu MNIST.
+Đề tài sử dụng thuật toán **K-Nearest Neighbors (KNN)** để phân loại chữ số viết tay từ bộ dữ liệu MNIST.
 
 ## ⚙️ Ngôn ngữ lập trình và thư viện sử dụng<br>
 
@@ -21,17 +21,17 @@
 - `Recall`: ~97%
 - `F1-score`: ~97%
 
-## 📈 Tối ưu tham số K
+## 📈 Tối ưu tham số $K$
 Biểu đồ dưới đây thể hiện độ chính xác theo các giá trị K khác nhau:
 ![Accuracy vs K](accuracy_vs_k.png)
 
-Kết quả cho thấy giá trị K tối ưu là **K = 1** với độ chính xác cao nhất.
+Kết quả cho thấy giá trị $K$ tối ưu là **$K = 1$** với độ chính xác cao nhất.
 
-## 📈 Phân tích tham số K (Hyperparameter Tuning)
+## 📈 Phân tích tham số $K$ (Hyperparameter Tuning)
 
 Trong đồ án này, mình đã thực hiện khảo sát giá trị $K$ từ 1 đến 10 để tìm ra điểm tối ưu cho mô hình.
 
-- **Tại sao chọn phạm vi 1-10?**
+- **Tại sao chọn phạm vi $1-10$?**
     - **Đặc thù dữ liệu:** Với bộ dữ liệu MNIST, các đặc trưng đã được chuẩn hóa tốt, các láng giềng gần nhất thường mang đặc điểm rất giống nhau. Qua thực nghiệm, giá trị $K$ nhỏ (thường là số lẻ < 10) đem lại độ chính xác cao nhất (trên 96%).
     - **Hiệu năng:** Vì KNN là thuật toán "Lazy Learning", việc tăng $K$ quá lớn sẽ làm tăng khối lượng tính toán và thời gian dự đoán mà không cải thiện đáng kể độ chính xác.
     - **Tránh Underfitting:** Khi $K$ quá lớn, ranh giới phân loại giữa các chữ số bị làm mờ, dẫn đến mô hình bị đơn giản hóa quá mức.
@@ -72,16 +72,16 @@ Phù hợp để minh họa thuật toán KNN cơ bản
 
 **Nhược điểm:**
 
-Không kiểm tra nhiều giá trị K → chưa tối ưu mô hình
+Không kiểm tra nhiều giá trị $K$ nên chưa tối ưu mô hình
 Confusion Matrix chưa hiển thị rõ nhãn
 
 🔹 `train.py`
 
 Thử nghiệm nhiều giá trị K từ 1 đến 10
 Vẽ biểu đồ Accuracy vs K để lựa chọn K tối ưu
-Tự động chọn K tốt nhất và huấn luyện lại mô hình
-Hiển thị Confusion Matrix với đầy đủ nhãn (0–9)
-Lưu các biểu đồ dưới dạng file .png
+Tự động chọn $K$ tốt nhất và huấn luyện lại mô hình
+Hiển thị Confusion Matrix với đầy đủ nhãn $(0–9)$
+Lưu các biểu đồ dưới dạng file `.png`
 
 **Ưu điểm:**
 
@@ -91,8 +91,8 @@ Confusion Matrix hiển thị chuyên nghiệp
 
 **Nhược điểm:**
 
-Chưa tính các chỉ số như Precision, Recall, F1-score
-Thời gian chạy lâu hơn do thử nhiều giá trị K
+Chưa tính các chỉ số như `Precision`, `Recall`, `F1-score`
+Thời gian chạy lâu hơn do thử nhiều giá trị $K$
 
 🎯 **Kết luận**
 File: `knn_mnist.py` phù hợp để minh họa và học thuật toán<br>
@@ -100,5 +100,4 @@ File: `train.py` phù hợp để làm đồ án và báo cáo chuyên sâu
 
 Trong thực tế, nên kết hợp ưu điểm của cả hai file:
 
-Dùng `train.py` để tìm K tối ưu
-Sau đó bổ sung thêm `Precision`, `Recall`, `F1-score` để đánh giá toàn diện mô hình
+Đâu tiên dùng `train.py` để tìm K tối ưu, sau đó bổ sung thêm `Precision`, `Recall`, `F1-score` để đánh giá toàn diện mô hình.
