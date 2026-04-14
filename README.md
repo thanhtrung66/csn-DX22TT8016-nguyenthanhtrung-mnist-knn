@@ -50,13 +50,14 @@ K nhỏ giúp mô hình phản ứng tốt với dữ liệu chi tiết, nhưng 
 Gõ lệnh `py -m pip install -r requirements.txt`<br>
 
 * **Bước 2:** Chạy code<br>
+
 *_Trường hợp 1_: `py knn_mnist.py`<br>
 
 *_Trường hợp 2_: `py train.py`<br>
 
 📌 Chi tiết từng file
 
-🔹 > knn_mnist.py
+🔹 knn_mnist.py
 Sử dụng giá trị K cố định (K = 3) để huấn luyện mô hình
 Tính đầy đủ các chỉ số đánh giá:
 `Accuracy`
