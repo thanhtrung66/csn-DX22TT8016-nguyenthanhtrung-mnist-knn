@@ -50,7 +50,7 @@ _Trường hợp 2_: Tối ưu tham số K<br>
 Biểu đồ dưới đây thể hiện độ chính xác theo các giá trị K khác nhau:
 ![Accuracy vs K](accuracy_vs_k.png)
 
-Kết quả cho thấy tuy K = 1 cho độ chính xác cao nhất, nhưng mô hình có thể nhạy với nhiễu (noise) và dễ bị overfitting. Trong thực tế, các giá trị K lớn hơn (như 3 hoặc 5) thường được cân nhắc để đảm bảo tính ổn định.
+_Kết quả cho thấy tuy K = 1 cho độ chính xác cao nhất, nhưng mô hình có thể nhạy với nhiễu (noise) và dễ bị overfitting. Trong thực tế, các giá trị K lớn hơn (như 3 hoặc 5) thường được cân nhắc để đảm bảo tính ổn định_.
 
 ## 📈 Phân tích tham số $K$ (Hyperparameter Tuning)
 
@@ -67,7 +67,7 @@ Trong đồ án này, mình đã thực hiện khảo sát giá trị $K$ từ 1
 Ma trận nhầm lẫn giúp đánh giá chi tiết khả năng phân loại của mô hình:
 ![Confusion Matrix](confusion_matrix.png)
 
-K nhỏ giúp mô hình phản ứng tốt với dữ liệu chi tiết, nhưng có thể dễ bị nhiễu.
+_K nhỏ giúp mô hình phản ứng tốt với dữ liệu chi tiết, nhưng có thể dễ bị nhiễu_.
 
 📌 Chi tiết từng file
 
