@@ -1,22 +1,25 @@
-# Nhận dạng chữ số viết tay bằng KNN
+# Nhận dạng chữ số viết tay bằng KNN, sử dụng thuật toán KNN để nhận diện chữ số viết tay từ bộ dữ liệu MNIST
 
 ## 📌 Giới thiệu
 Đề tài sử dụng thuật toán K-Nearest Neighbors (KNN) để phân loại chữ số viết tay từ bộ dữ liệu MNIST.
 
-## ⚙️ Công nghệ sử dụng<br>
-Ngôn ngữ lập trình<br>
+## ⚙️ Ngôn ngữ lập trình và thư viện sử dụng<br>
+
+**Ngôn ngữ lập trình**
 - Python<br>
-Thư Viện<br>
-- `Scikit-learn`
-- `NumPy`
-- `Matplotlib`
-- `Pandas`
+
+## 📦 Thư viện sử dụng
+- `numpy`: xử lý dữ liệu số
+- `scikit-learn`: xây dựng mô hình KNN
+- `matplotlib`: vẽ biểu đồ
+- `pandas`: xử lý, phân tích và quản lý dữ liệu dạng bảng
+- bộ dữ liệu **MNIST**
 
 ## 📊 Kết quả
-- `Accuracy:` ~97%
-- Precision: ~97%
-- Recall: ~97%
-- F1-score: ~97%
+- `Accuracy`: ~97%
+- `Precision`: ~97%
+- `Recall`: ~97%
+- `F1-score`: ~97%
 
 ## 📈 Tối ưu tham số K
 Biểu đồ dưới đây thể hiện độ chính xác theo các giá trị K khác nhau:
@@ -48,17 +51,18 @@ Gõ lệnh `py -m pip install -r requirements.txt`<br>
 
 **Bước 2:** Chạy code<br>
 _Trường hợp 1_: `py knn_mnist.py`<br>
+
 _Trường hợp 2_: `py train.py`<br>
 
 📌 Chi tiết từng file
 
-🔹 knn_mnist.py
+🔹 `knn_mnist.py`
 Sử dụng giá trị K cố định (K = 3) để huấn luyện mô hình
 Tính đầy đủ các chỉ số đánh giá:
-Accuracy
-Precision
-Recall
-F1-score
+`Accuracy`
+`Precision`
+`Recall`
+`F1-score`
 Hiển thị ma trận nhầm lẫn dưới dạng hình ảnh đơn giản
 
 **Ưu điểm:**
@@ -91,16 +95,10 @@ Chưa tính các chỉ số như Precision, Recall, F1-score
 Thời gian chạy lâu hơn do thử nhiều giá trị K
 
 🎯 **Kết luận**
-File knn_mnist.py phù hợp để minh họa và học thuật toán
-File train.py phù hợp để làm đồ án và báo cáo chuyên sâu
+File: `knn_mnist.py` phù hợp để minh họa và học thuật toán<br>
+File: `train.py` phù hợp để làm đồ án và báo cáo chuyên sâu
 
 Trong thực tế, nên kết hợp ưu điểm của cả hai file:
 
-Dùng train.py để tìm K tối ưu
-Sau đó bổ sung thêm Precision, Recall, F1-score để đánh giá toàn diện mô hình
-
-## 📦 Thư viện sử dụng
-- numpy: xử lý dữ liệu số
-- scikit-learn: xây dựng mô hình KNN
-- matplotlib: vẽ biểu đồ
-- pandas: xử lý, phân tích và quản lý dữ liệu dạng bảng
+Dùng `train.py` để tìm K tối ưu
+Sau đó bổ sung thêm `Precision`, `Recall`, `F1-score` để đánh giá toàn diện mô hình
