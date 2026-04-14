@@ -109,9 +109,9 @@ Confusion Matrix hiển thị chuyên nghiệp
 Chưa tính các chỉ số như `Precision`, `Recall`, `F1-score`
 Thời gian chạy lâu hơn do thử nhiều giá trị _K_
 
-🎯 **Kết luận**
-File: knn_mnist.py phù hợp để minh họa và học thuật toán<br>
-File: train.py phù hợp để làm đồ án và báo cáo chuyên sâu
+🎯 **Kết luận**<br>
+* File: knn_mnist.py phù hợp để minh họa và học thuật toán<br>
+* File: train.py phù hợp để làm đồ án và báo cáo chuyên sâu
 
 ## ⚠️ Hạn chế
 
