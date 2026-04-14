@@ -51,9 +51,9 @@ Gõ lệnh `py -m pip install -r requirements.txt`<br>
 
 * **Bước 2:** Chạy code<br>
 
-*_Trường hợp 1_: `py knn_mnist.py`<br>
+_Trường hợp 1_: `py knn_mnist.py`<br>
 
-*_Trường hợp 2_: `py train.py`<br>
+_Trường hợp 2_: `py train.py`<br>
 
 📌 Chi tiết từng file
 
