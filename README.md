@@ -43,10 +43,10 @@ _Trường hợp 2_: Tối ưu tham số K<br>
 ### 📷 Hiển thị vài mẫu ảnh ngẫu nhiên
 Dữ liệu MNIST gồm các ảnh chữ số viết tay kích thước 28x28 pixel.  
 Để trực quan hóa dữ liệu, ta hiển thị ngẫu nhiên 5 ảnh từ dataset.<br>
-![Mẫu ảnh](ảnh ngẫu nhiên.png)
+![Mẫu ảnh](anh_nga_nhien.png)
 
 ## 📊 Kiểm tra phân bố nhãn
-![phân bố nhãn](phân bố nhãn.png)
+![phân bố nhãn](phan_bo_nhan.png)
 
 ## 📊 Kết quả
 - `Accuracy`: ~97%
