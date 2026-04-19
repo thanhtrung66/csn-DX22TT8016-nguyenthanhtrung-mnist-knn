@@ -36,8 +36,7 @@ Gõ lệnh `py -m pip install -r requirements.txt`<br>
 
 _Trường hợp 1_: Chạy mô hình cơ bản<br>
 `py knn_mnist.py`<br>
-### Kết quả
-![Kết quả trường hợp 1]()
+![Kết quả trường hợp 1](ket_qua_1.png)
 
 _Trường hợp 2_: Tối ưu tham số K<br>
 `py train.py`<br>
