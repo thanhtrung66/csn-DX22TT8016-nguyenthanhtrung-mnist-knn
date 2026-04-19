@@ -41,9 +41,11 @@ _Trường hợp 2_: Tối ưu tham số K<br>
 `py train.py`<br>
 
 ### 📷 Hiển thị vài mẫu ảnh
+
 Dữ liệu MNIST gồm các ảnh chữ số viết tay kích thước 28x28 pixel.  
 Để trực quan hóa dữ liệu, ta hiển thị ngẫu nhiên 5 ảnh từ dataset.
 
+```python
 fig, axes = plt.subplots(1, 5, figsize=(10, 5))
 random_indices = np.random.choice(len(X), 5, replace=False)
 
@@ -54,6 +56,12 @@ for ax, idx in zip(axes, random_indices):
 
 plt.show()
 
+
+---
+
+## 📊 Kiểm tra phân bố nhãn
+
+```markdown
 ### 📊 Kiểm tra phân bố nhãn
 
 Để đảm bảo dataset không bị lệch (imbalance), ta kiểm tra số lượng mẫu của từng chữ số (0–9).
