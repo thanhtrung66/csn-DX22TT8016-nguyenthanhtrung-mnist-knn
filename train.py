@@ -4,6 +4,8 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix, ConfusionMatrixDisplay
 import matplotlib.pyplot as plt
 import numpy as np
+from collections import Counter
+import pandas as pd
 
 print("Loading MNIST...")
 mnist = fetch_openml('mnist_784', version=1)
@@ -11,6 +13,27 @@ mnist = fetch_openml('mnist_784', version=1)
 X = mnist.data
 y = mnist.target.astype(int)
 
+# ====== HIỂN THỊ 5 ẢNH MẪU ======
+fig, axes = plt.subplots(1, 5, figsize=(10, 5))
+# Lấy 5 index random không trùng
+random_indices = np.random.choice(len(X), 5, replace=False)
+
+for ax, idx in zip(axes, random_indices):
+    ax.imshow(X.iloc[idx].values.reshape(28, 28), cmap='gray')
+    ax.set_title(f"Label: {y.iloc[idx]}")
+    ax.axis('off')
+
+plt.show()
+
+# ====== KIỂM TRA PHÂN BỐ NHÃN ======
+counter = Counter(y)
+counter = counter.most_common()
+counter_df = pd.DataFrame(counter, columns=['Số', 'Số lượng'])
+
+print("\nPhân bố nhãn:")
+print(counter_df)
+
+# ====== CHIA DATA ======
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42
 )
@@ -19,7 +42,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 k_values = range(1, 11)
 accuracies = []
 
-print("Testing K values...")
+print("\nTesting K values...")
 
 for k in k_values:
     model = KNeighborsClassifier(n_neighbors=k)
@@ -46,22 +69,19 @@ print("Saved accuracy_vs_k.png")
 best_k = k_values[accuracies.index(max(accuracies))]
 print(f"Best K = {best_k}")
 
-# ====== TRAIN LẠI VỚI K TỐT NHẤT ======
+# ====== TRAIN LẠI ======
 model = KNeighborsClassifier(n_neighbors=best_k)
 model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 
 # ====== CONFUSION MATRIX ======
-labels = list(range(10))  # MNIST có 0–9
-
+labels = list(range(10))
 cm = confusion_matrix(y_test, y_pred, labels=labels)
 
-# In ra console có label rõ ràng
 print("\nConfusion Matrix:")
-print("Labels (0-9):")
 print(cm)
 
-# ====== Vẽ CONFUSION MATRIX ====== 
+# ====== VẼ CONFUSION MATRIX ======
 disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=labels)
 
 fig, ax = plt.subplots(figsize=(8, 8))
