@@ -40,41 +40,13 @@ _Trường hợp 1_: Chạy mô hình cơ bản<br>
 _Trường hợp 2_: Tối ưu tham số K<br>
 `py train.py`<br>
 
-### 📷 Hiển thị vài mẫu ảnh
-
+### 📷 Hiển thị vài mẫu ảnh ngẫu nhiên
 Dữ liệu MNIST gồm các ảnh chữ số viết tay kích thước 28x28 pixel.  
 Để trực quan hóa dữ liệu, ta hiển thị ngẫu nhiên 5 ảnh từ dataset.
-
-```python
-fig, axes = plt.subplots(1, 5, figsize=(10, 5))
-random_indices = np.random.choice(len(X), 5, replace=False)
-
-for ax, idx in zip(axes, random_indices):
-    ax.imshow(X.iloc[idx].values.reshape(28, 28), cmap='gray')
-    ax.set_title(f"Label: {y.iloc[idx]}")
-    ax.axis('off')
-
-plt.show()
-
-
----
+![Mẫu ảnh]()
 
 ## 📊 Kiểm tra phân bố nhãn
-
-```markdown
-### 📊 Kiểm tra phân bố nhãn
-
-Để đảm bảo dataset không bị lệch (imbalance), ta kiểm tra số lượng mẫu của từng chữ số (0–9).
-
-```python
-from collections import Counter
-import pandas as pd
-
-counter = Counter(y)
-counter = counter.most_common()
-counter_df = pd.DataFrame(counter, columns=['Số', 'Số lượng'])
-
-print(counter_df)
+![phân bố nhãn]
 
 ## 📊 Kết quả
 - `Accuracy`: ~97%
