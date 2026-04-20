@@ -3,6 +3,7 @@ from sklearn.datasets import fetch_openml              # Load dataset MNIST từ
 from sklearn.model_selection import train_test_split   # Chia dữ liệu train/test
 from sklearn.neighbors import KNeighborsClassifier     # Thuật toán KNN
 from sklearn.metrics import accuracy_score, confusion_matrix, ConfusionMatrixDisplay  # Đánh giá model
+from sklearn.metrics import classification_report, precision_score, recall_score, f1_score # các công cụ đo lường để đánh giá model
 import matplotlib.pyplot as plt                        # Vẽ biểu đồ
 import numpy as np                                     # Xử lý mảng số
 from collections import Counter                        # Đếm số lượng phần tử
@@ -74,29 +75,46 @@ print("Saved accuracy_vs_k.png")
 best_k = k_values[accuracies.index(max(accuracies))]  # Lấy K có accuracy cao nhất
 print(f"Best K = {best_k}")
 
-# ====== train lại với K tốt nhất ======
+# ====== HUẤN LUYỆN LẠI VỚI K TỐT NHẤT ======
+print(f"\nTraining final model with Best K = {best_k}...")
 model = KNeighborsClassifier(n_neighbors=best_k)
 model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 
-# ====== confusion matrix ======
-labels = list(range(10))  # Nhãn từ 0 đến 9
-cm = confusion_matrix(y_test, y_pred, labels=labels)  # Tạo ma trận nhầm lẫn
+# ====== TÍNH TOÁN CÁC CHỈ SỐ CHI TIẾT ======
+# Tính Accuracy (Độ chính xác tổng quát)
+accuracy = accuracy_score(y_test, y_pred)
 
-print("\nConfusion Matrix:")
-print(cm)
+# Tính Precision, Recall, F1-score (Trung bình cộng các lớp - macro average)
+precision = precision_score(y_test, y_pred, average='macro') # Tính Precision trung bình cộng các lớp
+recall = recall_score(y_test, y_pred, average='macro')       # Tính Recall trung bình cộng các lớp
+f1 = f1_score(y_test, y_pred, average='macro')               # Tính F1-score trung bình cộng các lớp
 
-# ====== vẽ confusion matrix ======
+# In kết quả ra màn hình Console
+print("-" * 30)
+print(f"Accuracy (Tổng quát): {accuracy:.4f}") 
+print(f"Precision (Trung bình): {precision:.4f}")
+print(f"Recall (Trung bình): {recall:.4f}")
+print(f"F1-score (Trung bình): {f1:.4f}")
+print("-" * 30)
+
+# Xuất bảng báo cáo chi tiết cho từng chữ số (từ 0 đến 9)
+print("\nBáo cáo chi tiết từng lớp (Classification Report):")
+print(classification_report(y_test, y_pred))
+
+# ====== VẼ VÀ LƯU CONFUSION MATRIX ======
+labels = list(range(10))
+cm = confusion_matrix(y_test, y_pred, labels=labels)
 disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=labels)
 
 fig, ax = plt.subplots(figsize=(8, 8))
-disp.plot(ax=ax, cmap='Blues', values_format='d')  # Hiển thị ma trận
+disp.plot(ax=ax, cmap='Blues', values_format='d')
 
-plt.title("Confusion Matrix (MNIST)")
+plt.title(f"Confusion Matrix (MNIST) - Best K: {best_k}")
 plt.xlabel("Predicted label")
 plt.ylabel("True label")
 
-plt.savefig("confusion_matrix.png")  # Lưu ảnh
+plt.savefig("confusion_matrix.png")  # Lưu ảnh ma trận nhầm lẫn
 print("Saved confusion_matrix.png")
 
-plt.show()  # Hiển thị kết quả
+plt.show()  # Hiển thị tất cả các biểu đồ đã vẽ
