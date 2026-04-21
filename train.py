@@ -102,6 +102,16 @@ print("-" * 30)
 print("\nBáo cáo chi tiết từng lớp (Classification Report):")
 print(classification_report(y_test, y_pred))
 
+# Lấy report dạng dict
+report_dict = classification_report(y_test, y_pred, output_dict=True)
+
+# Chuyển thành DataFrame
+df_report = pd.DataFrame(report_dict).transpose()
+
+# Xuất báo cáo ra Excel
+df_report.to_excel("classification_report.xlsx", index=True)
+print("Đã xuất file Excel thành công!")
+
 # ====== VẼ VÀ LƯU CONFUSION MATRIX ======
 labels = list(range(10))
 cm = confusion_matrix(y_test, y_pred, labels=labels)
