@@ -13,6 +13,7 @@
 - `scikit-learn`: xây dựng mô hình KNN
 - `matplotlib`: vẽ biểu đồ
 - `pandas`: xử lý, phân tích và quản lý dữ liệu dạng bảng
+- `openpyxl`: giúp xuất dữ liệu ra file Excel
 
 ## 📂 Dataset: MNIST
 
@@ -27,11 +28,11 @@
 Gõ lệnh `py -m pip install -r requirements.txt`<br>
 
 📦 requirements.txt<br>
-* `numpy`<br>
-* `scikit-learn`<br>
-* `matplotlib`<br>
-* `pandas`<br>
-* `openpyxl`<br>
+** `numpy`<br>
+** `scikit-learn`<br>
+** `matplotlib`<br>
+** `pandas`<br>
+** `openpyxl`<br>
 
 * **Bước 2:** Chạy code<br>
 
