@@ -31,6 +31,7 @@ Gõ lệnh `py -m pip install -r requirements.txt`<br>
 * `scikit-learn`<br>
 * `matplotlib`<br>
 * `pandas`<br>
+* `openpyxl`<br>
 
 * **Bước 2:** Chạy code<br>
 
