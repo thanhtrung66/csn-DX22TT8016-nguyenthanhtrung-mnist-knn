@@ -28,11 +28,11 @@
 Gõ lệnh `py -m pip install -r requirements.txt`<br>
 
 📦 requirements.txt<br>
-** `numpy`<br>
-** `scikit-learn`<br>
-** `matplotlib`<br>
-** `pandas`<br>
-** `openpyxl`<br>
+- `numpy`<br>
+- `scikit-learn`<br>
+- `matplotlib`<br>
+- `pandas`<br>
+- `openpyxl`<br>
 
 * **Bước 2:** Chạy code<br>
 
