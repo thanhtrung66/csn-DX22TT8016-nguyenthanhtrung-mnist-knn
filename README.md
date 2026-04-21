@@ -100,11 +100,11 @@ Hiển thị ma trận nhầm lẫn dưới dạng hình ảnh đơn giản
 - Confusion Matrix chưa hiển thị rõ nhãn
 
 🔹 `train.py`:<br>
-- Thử nghiệm nhiều giá trị K từ 1 đến 10
-- Vẽ biểu đồ Accuracy vs K để lựa chọn K tối ưu
-- Tự động chọn _K_ tốt nhất và huấn luyện lại mô hình
-- Hiển thị Confusion Matrix với đầy đủ nhãn (0–9)
-- Lưu các biểu đồ dưới dạng file `.png`
+- Dùng scikit-learn chuẩn
+- Có train/test split (80/20)
+- Có thử nhiều K → rất quan trọng
+- Có visualization (ảnh + biểu đồ)
+- Có confusion matrix + classification report
 
 **Ưu điểm:**<br>
 - Có quy trình tối ưu hyperparameter rõ ràng
@@ -123,5 +123,4 @@ Hiển thị ma trận nhầm lẫn dưới dạng hình ảnh đơn giản
 
 **## ⚠️ Hạn chế**<br>
 - Tốn thời gian dự đoán với tập dữ liệu lớn
-- Nhạy với dữ liệu nhiễu
 - Không hiệu quả khi số chiều dữ liệu cao
