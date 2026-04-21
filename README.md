@@ -101,15 +101,12 @@ Hiển thị ma trận nhầm lẫn dưới dạng hình ảnh đơn giản
 
 🔹 `train.py`:<br>
 - Dùng scikit-learn chuẩn
-- Có train/test split (80/20)
-- Có thử nhiều K → rất quan trọng
-- Có visualization (ảnh + biểu đồ)
-- Có confusion matrix + classification report
+- Train/test split (80/20)
 
 **Ưu điểm:**<br>
-- Có quy trình tối ưu hyperparameter rõ ràng
-- Có ảnh minh họa label
-- Trực quan hóa dữ liệu tốt
+- Có thử nhiều K
+- Có quy trình tối ưu rõ ràng
+- Trực quan hóa dữ liệu tốt (ảnh + biểu đồ)
 - Confusion Matrix hiển thị chuyên nghiệp
 - Hiển thị đủ các chỉ số đánh giá mô hình
 - Có báo cáo chi tiết bằng Excel
