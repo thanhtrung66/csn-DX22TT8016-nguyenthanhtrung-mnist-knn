@@ -119,5 +119,5 @@ Hiển thị ma trận nhầm lẫn dưới dạng hình ảnh đơn giản
 - File: `train.py` phù hợp để làm đồ án và báo cáo chuyên sâu
 
 **## ⚠️ Hạn chế**<br>
-- Tốn thời gian dự đoán với tập dữ liệu lớn
-- Không hiệu quả khi số chiều dữ liệu cao
+- Rất chậm khi dữ liệu lớn
+- Không có giai đoạn học thực sự vì KNN chỉ “ghi nhớ dữ liệu” nên không tối ưu hóa gì
