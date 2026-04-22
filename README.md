@@ -53,21 +53,20 @@ Dữ liệu MNIST gồm các ảnh chữ số viết tay kích thước 28x28 pi
 <br>
 Việc kiểm tra phân bố nhãn giúp đánh giá mức độ cân bằng của dữ liệu. Nếu dữ liệu bị mất cân bằng, mô hình KNN có thể bị thiên lệch về các lớp có nhiều mẫu hơn, ảnh hưởng đến độ chính xác tổng thể và khả năng dự đoán các lớp thiểu số.<br>
 
-Nếu Model dự đoán số “1” rất tốt nhưng số “5” kém hơn nghĩa là do số lượng mẫu của nhãn 5 ít hơn (7877 > 6313) nên mô hình học kém hiệu quả hơn<br>
-
+Mặc dù có sự chênh lệch nhẹ giữa các lớp, nhưng dataset MNIST nhìn chung khá cân bằng, do đó không gây ảnh hưởng lớn đến hiệu suất mô hình.<br>
 ## 📊 Kết quả
 - `Accuracy`: ~97%
 - `Precision`: ~97%
 - `Recall`: ~97%
 - `F1-score`: ~97%<br>
 **=> Model đạt accuracy ~97.20%, cùng với precision, recall và F1-score đều xấp xỉ 97%.
-Điều này cho thấy mô hình hoạt động ổn định và không bị lệch về một lớp cụ thể. Với thuật toán KNN, mức accuracy trên ~97% được xem là kết quả tốt trên tập MNIST, đặc biệt khi chưa áp dụng các kỹ thuật tối ưu nâng cao.**<br>
+Điều này cho thấy mô hình hoạt động ổn định và không có dấu hiệu lệch lớp rõ rệt. Với thuật toán KNN, mức accuracy trên ~97% được xem là kết quả tốt trên tập MNIST, đặc biệt khi chưa áp dụng các kỹ thuật tối ưu nâng cao.**<br>
 
 ## 📈 Tối ưu tham số $K$
 Biểu đồ dưới đây thể hiện độ chính xác theo các giá trị K khác nhau:
 ![Accuracy vs K](accuracy_vs_k.png)
 
-_Kết quả cho thấy tuy K = 1 cho độ chính xác cao nhất, nhưng mô hình có thể nhạy với nhiễu (noise) và dễ bị overfitting. Trong thực tế, các giá trị K lớn hơn (như 3 hoặc 5) thường được cân nhắc để đảm bảo tính ổn định_.
+_Kết quả cho thấy tuy K = 1 cho độ chính xác cao nhất, nhưng mô hình có thể nhạy với nhiễu (noise) và dễ bị overfitting. **Trong thực tế, các giá trị K lớn hơn (như 3 hoặc 5) thường được cân nhắc để đảm bảo tính ổn định_**.
 
 ## 📈 Phân tích tham số $K$ (Hyperparameter Tuning)
 
