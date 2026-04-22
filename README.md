@@ -53,7 +53,7 @@ Dữ liệu MNIST gồm các ảnh chữ số viết tay kích thước 28x28 pi
 <br>
 Việc kiểm tra phân bố nhãn giúp đánh giá mức độ cân bằng của dữ liệu. Nếu dữ liệu bị mất cân bằng, mô hình KNN có thể bị thiên lệch về các lớp có nhiều mẫu hơn, ảnh hưởng đến độ chính xác tổng thể và khả năng dự đoán các lớp thiểu số.<br>
 
-Nếu Model dự đoán số “1” rất tốt nhưng số “5” kém hơn nghĩa là do số lượng mẫu của nhãn 5 ít hơn nên mô hình học kém hiệu quả hơn<br>
+Nếu Model dự đoán số “1” rất tốt nhưng số “5” kém hơn nghĩa là do số lượng mẫu của nhãn 5 ít hơn (7877 > 6313) nên mô hình học kém hiệu quả hơn<br>
 
 ## 📊 Kết quả
 - `Accuracy`: ~97%
