@@ -78,6 +78,9 @@ Trong đồ án này, mình đã thực hiện khảo sát giá trị $K$ từ 1
 Ma trận nhầm lẫn giúp đánh giá chi tiết khả năng phân loại của mô hình:
 ![Confusion Matrix](confusion_matrix.png)
 
+## Bảng xét và đánh giá
+![Nhận xét biểu đồ CF](danh_gia_CF.png)<br>
+
 _K nhỏ giúp mô hình phản ứng tốt với dữ liệu chi tiết, nhưng có thể dễ bị nhiễu_.
 
 📌 **Đánh giá chi tiết từng file:**
