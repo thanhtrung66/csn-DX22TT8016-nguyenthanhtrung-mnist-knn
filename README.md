@@ -55,7 +55,7 @@ Dữ liệu MNIST gồm các ảnh chữ số viết tay kích thước 28x28 pi
 - `Accuracy`: ~97%
 - `Precision`: ~97%
 - `Recall`: ~97%
-- `F1-score`: ~97%
+- `F1-score`: ~97%<br>
 **=> Model đạt accuracy ~97.20%, cùng với precision, recall và F1-score đều xấp xỉ 97%.
 Điều này cho thấy mô hình hoạt động ổn định và không bị lệch về một lớp cụ thể. Với thuật toán KNN, mức accuracy trên ~97% được xem là kết quả tốt trên tập MNIST, đặc biệt khi chưa áp dụng các kỹ thuật tối ưu nâng cao.**<br>
 
