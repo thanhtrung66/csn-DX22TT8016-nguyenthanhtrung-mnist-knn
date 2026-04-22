@@ -34,6 +34,7 @@ Gõ lệnh `py -m pip install -r requirements.txt`<br>
 - `matplotlib`<br>
 - `pandas`<br>
 - `openpyxl`<br>
+- `seaborn`<br>
 
 * **Bước 2:** Chạy code<br>
 
