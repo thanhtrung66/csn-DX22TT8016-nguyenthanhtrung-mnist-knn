@@ -14,6 +14,7 @@
 - `matplotlib`: vẽ biểu đồ
 - `pandas`: xử lý, phân tích và quản lý dữ liệu dạng bảng
 - `openpyxl`: giúp xuất dữ liệu ra file Excel
+- `seaborn`: vẽ biểu đồ nhiệt ma trận nhầm lẫn (heatmap)
 
 ## 📂 Dataset: MNIST
 
@@ -82,6 +83,12 @@ Trong đồ án này, mình đã thực hiện khảo sát giá trị $K$ từ 1
 ## 📷 Ma trận nhầm lẫn
 Ma trận nhầm lẫn giúp đánh giá chi tiết khả năng phân loại của mô hình:
 ![Confusion Matrix](confusion_matrix.png)
+
+## 📷 Biểu đồ nhiệt ma trận nhầm lẫn
+- Thư viện `Seaborn`: Giúp việc điều chỉnh màu sắc và hiển thị thanh thang đo (color bar) bên cạnh tự động và đẹp mắt hơn.<br>
+- Thông số `annot=True`: Đảm bảo các con số cụ thể xuất hiện trong từng ô để bạn dễ dàng báo cáo số liệu chính xác.<br>
+- Màu sắc `YlGnBu`: Đây là dải màu chuyển từ nhạt sang đậm rất trực quan; những ô có màu càng đậm đồng nghĩa với việc số lượng mẫu rơi vào đó càng nhiều.<br>
+![Heatmap](heatmap.png)<br>
 
 ## Bảng xét và đánh giá
 ![Nhận xét biểu đồ CF](danh_gia_CF.png)<br>
