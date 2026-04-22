@@ -66,7 +66,7 @@ Mặc dù có sự chênh lệch nhẹ giữa các lớp, nhưng dataset MNIST n
 Biểu đồ dưới đây thể hiện độ chính xác theo các giá trị K khác nhau:
 ![Accuracy vs K](accuracy_vs_k.png)
 
-_Kết quả cho thấy tuy K = 1 cho độ chính xác cao nhất, nhưng mô hình có thể nhạy với nhiễu (noise) và dễ bị overfitting. **Trong thực tế, các giá trị K lớn hơn (như 3 hoặc 5) thường được cân nhắc để đảm bảo tính ổn định_**.
+_Kết quả cho thấy tuy K = 1 cho độ chính xác cao nhất, nhưng mô hình có thể nhạy với nhiễu (noise) và dễ bị overfitting. **Trong thực tế, các giá trị K lớn hơn (như 3 hoặc 5) thường được cân nhắc để đảm bảo tính ổn định**_.
 
 ## 📈 Phân tích tham số $K$ (Hyperparameter Tuning)
 
