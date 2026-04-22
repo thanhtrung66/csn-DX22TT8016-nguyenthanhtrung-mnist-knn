@@ -4,6 +4,7 @@ from sklearn.model_selection import train_test_split   # Chia dữ liệu train/
 from sklearn.neighbors import KNeighborsClassifier     # Thuật toán KNN
 from sklearn.metrics import accuracy_score, confusion_matrix, ConfusionMatrixDisplay  # Đánh giá model
 from sklearn.metrics import classification_report, precision_score, recall_score, f1_score # các công cụ đo lường để đánh giá model
+import seaborn as sns                            # Vẽ biểu đồ nhiệt
 import matplotlib.pyplot as plt                        # Vẽ biểu đồ
 import numpy as np                                     # Xử lý mảng số
 from collections import Counter                        # Đếm số lượng phần tử
@@ -128,3 +129,29 @@ plt.savefig("confusion_matrix.png")  # Lưu ảnh ma trận nhầm lẫn
 print("Saved confusion_matrix.png")
 
 plt.show()  # Hiển thị tất cả các biểu đồ đã vẽ
+
+# ====== VẼ HEATMAP (CONFUSION MATRIX) ======
+# Tính toán ma trận nhầm lẫn
+cm = confusion_matrix(y_test, y_pred)
+
+# Tạo khung hình cho biểu đồ
+plt.figure(figsize=(10, 8))
+
+# Sử dụng seaborn để vẽ heatmap
+# annot=True: Hiển thị số lượng bên trong các ô
+# fmt='d': Định dạng số nguyên
+# cmap='YlGnBu': Bộ màu Vàng - Xanh lá - Xanh dương (có thể đổi thành 'Blues' hoặc 'viridis')
+sns.heatmap(cm, annot=True, fmt='d', cmap='YlGnBu', 
+            xticklabels=range(10), yticklabels=range(10))
+
+# Cấu hình tiêu đề và nhãn cho trục
+plt.title(f"Heatmap Ma trận nhầm lẫn (MNIST) - Best K: {best_k}", fontsize=15)
+plt.xlabel("Nhãn dự đoán (Predicted Label)", fontsize=12)
+plt.ylabel("Nhãn thực tế (True Label)", fontsize=12)
+
+# Lưu ảnh Heatmap
+plt.savefig("mnist_heatmap.png")
+print("Đã lưu mnist_heatmap.png")
+
+# Hiển thị biểu đồ
+plt.show()
