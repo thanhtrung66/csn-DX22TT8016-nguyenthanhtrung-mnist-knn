@@ -23,7 +23,7 @@
 - Số lớp: 10 (từ 0 đến 9)
 - Mỗi ảnh được biểu diễn thành vector 784 chiều
 
-## 📌 Cách chạy trên CMD
+## 📌 Có thể chạy trên CMD hoặc Visual Studio
 
 * **Bước 1**: cài đặt thư viện<br>
 Gõ lệnh `py -m pip install -r requirements.txt`<br>
