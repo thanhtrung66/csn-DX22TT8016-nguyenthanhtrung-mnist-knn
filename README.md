@@ -7,7 +7,7 @@
 
 **Ngôn ngữ lập trình**
 - Python<br>
-- Lưu ý: yêu cầu Python 3.11 trở lên để đảm bảo tương thích. <br>
+- Lưu ý: yêu cầu **Python 3.11** trở lên để đảm bảo tương thích. <br>
 
 ## 📦 Thư viện sử dụng
 - `numpy`: xử lý dữ liệu số
