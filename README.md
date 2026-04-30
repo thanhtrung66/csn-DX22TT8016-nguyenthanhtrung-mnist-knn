@@ -7,6 +7,7 @@
 
 **Ngôn ngữ lập trình**
 - Python<br>
+- Lưu ý: yêu cầu Python 3.11 trở lên để đảm bảo tương thích. <br>
 
 ## 📦 Thư viện sử dụng
 - `numpy`: xử lý dữ liệu số
@@ -16,19 +17,18 @@
 - `openpyxl`: giúp xuất dữ liệu ra file Excel
 - `seaborn`: vẽ biểu đồ nhiệt ma trận nhầm lẫn (heatmap)
 
-## 📂 Dataset: MNIST
-
+## 📂 Dataset: MNIST <br>
 - Số lượng mẫu: 70,000 ảnh
 - Kích thước ảnh: 28x28 pixels
 - Số lớp: 10 (từ 0 đến 9)
 - Mỗi ảnh được biểu diễn thành vector 784 chiều
 
-## 📌 Có thể chạy trên CMD hoặc Visual Studio
+**📂 Cấu trúc thư mục**<br>
+- `train.py`: Tệp thực thi huấn luyện và đánh giá mô hình. <br>
+- `requirements.txt`: Danh sách các thư viện cần cài đặt. <br>
+- `guide.txt`: Hướng dẫn chi tiết các bước cài đặt và chạy code. <br>
 
-* **Bước 1**: cài đặt thư viện<br>
-Gõ lệnh `py -m pip install -r requirements.txt`<br>
-
-📦 requirements.txt<br>
+**📦 requirements.txt**<br>
 - `numpy`<br>
 - `scikit-learn`<br>
 - `matplotlib`<br>
@@ -36,13 +36,19 @@ Gõ lệnh `py -m pip install -r requirements.txt`<br>
 - `openpyxl`<br>
 - `seaborn`<br>
 
-* **Bước 2:** Chạy code<br>
+**⚙️ Hướng dẫn cài đặt nhanh**<br>
+- **Bước 1:** Tạo môi trường ảo: `python -m venv venv`.  <br>
+- **Bước 2:** Kích hoạt môi trường: `venv\Scripts\activate`. <br> 
+- **Bước 3:** Cài đặt thư viện: `pip install -r requirements.txt`. <br>  
+- **Bước 4:** Chạy chương trình: `py train.py`. <br>
 
-_Trường hợp 1_: Chạy mô hình cơ bản<br>
+## 📌 Có thể chạy trên CMD hoặc Visual Studio Code <br>
+
+* _Trường hợp 1_: Chạy mô hình cơ bản<br>
 `py knn_mnist.py`<br>
 ![Kết quả trường hợp 1](ket_qua_1.png)
 
-_Trường hợp 2_: Tối ưu và phân tích tham số K, hiển thị ma trận nhầm lẫn<br>
+* _Trường hợp 2_: Tối ưu và phân tích tham số K, hiển thị ma trận nhầm lẫn<br>
 `py train.py`<br>
 
 ### 📷 Hiển thị vài mẫu ảnh ngẫu nhiên
