@@ -46,12 +46,13 @@
 
 * _Trường hợp 1_: Chạy mô hình cơ bản<br>
 `py knn_mnist.py`<br>
- <center><h1>**Kết quả**</h1></center> <br>
+ **Kết quả** <br>
+  
 ![Kết quả trường hợp 1](ket_qua_1.png)
 
 * _Trường hợp 2_: Tối ưu và phân tích tham số K, hiển thị ma trận nhầm lẫn<br>
 `py train.py`<br>
-
+ **Kết quả** <br>
 ### 📷 Hiển thị vài mẫu ảnh ngẫu nhiên
 Dữ liệu MNIST gồm các ảnh chữ số viết tay kích thước 28x28 pixel.  
 Để trực quan hóa dữ liệu, ta hiển thị ngẫu nhiên 5 ảnh từ dataset.<br>
