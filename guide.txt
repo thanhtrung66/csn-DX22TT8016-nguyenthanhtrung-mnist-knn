@@ -1,0 +1,46 @@
+B1: Kiểm tra Python đã cài chưa, Mở CMD gõ:
+python --version hoặc py --version
+--> Nếu hiện version (vd: Python 3.14) là OK
+--> Nếu lỗi → cài Python, download tại link https://www.python.org/downloads/release/python-3144/
+
+*Lưu ý: yêu cầu tải phiên bản Python từ 3.11 trở lên để tránh lỗi không tương thích khi chạy thuật toán.
+
+B2: Di chuyển đến thư mục project
+cd đường_dẫn_đến_thư_mục
+(Ví dụ: cd D:\Python)
+
+B3: Tạo virtual environment (venv) 
+python -m venv venv hoặc py -m venv venv
+Thành công sẽ thấy: (venv) C:\Users\...
+
+B4: Kích hoạt venv
+venv\Scripts\activate
+--> Thành công sẽ thấy: (venv) trước dòng lệnh
+
+B5: Cài thư viện 
+- Cách 1 gõ:
+pip install numpy pandas scikit-learn matplotlib seaborn openpyxl
+
+- Cách2 (khuyên dùng): tạo tệp requirements.txt chứa các thư viện để cài 1 lần cho gọn gõ:
+pip install -r requirements.txt
+
+B6: cách kiểm tra thư viện đã được cài gõ:
+pip list
+
+B7: chạy chương trình gõ:
+py train.py hoặc python train.py
+
+B8: thoát venv gõ: 
+deactivate
+--> Mất chữ (venv) là thoát thành công
+
+*Lưu ý: 
+Có thể cài thư viện trực tiếp vào Python hệ thống mà không cần dùng venv. (bỏ qua Bước 3 và 4)
+
+Tuy nhiên, trong môi trường lập trình thực tế khuyến khích sử dụng venv vì:
+- Quản lý thư viện theo từng project
+- Tránh xung đột phiên bản
+- Dễ làm việc nhóm và debug
+--> Mỗi project nên dùng một môi trường venv riêng.
+
+ 
