@@ -46,6 +46,7 @@
 
 * _Trường hợp 1_: Chạy mô hình cơ bản<br>
 `py knn_mnist.py`<br>
+ <center><h1>**Kết quả**</h1></center> <br>
 ![Kết quả trường hợp 1](ket_qua_1.png)
 
 * _Trường hợp 2_: Tối ưu và phân tích tham số K, hiển thị ma trận nhầm lẫn<br>
