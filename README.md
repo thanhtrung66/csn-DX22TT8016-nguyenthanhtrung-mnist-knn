@@ -44,7 +44,11 @@
 
 ## 📌 Có thể chạy trên CMD hoặc Visual Studio Code <br>
 
-* _Trường hợp 1_: Chạy mô hình cơ bản. <br>
+**Bước 1:** luôn nhớ Kích hoạt môi trường ảo trước khi khởi chạy: `venv\Scripts\activate`. <br>
+
+**Bước 2:**
+* _Trường hợp 1_: <br>
+Chạy mô hình cơ bản. <br>
 `py src\knn_mnist.py`<br>
  **Kết quả** <br>
   
@@ -52,7 +56,8 @@
 
 ![Ma trận nhầm lẫn cơ bản](thesis/CF_1.png) <br>
 
-* _Trường hợp 2_: Tối ưu và phân tích tham số K, hiển thị ma trận nhầm lẫn. <br>
+* _Trường hợp 2_: <br> 
+Tối ưu và phân tích tham số K, hiển thị ma trận nhầm lẫn. <br>
 `py scr\train.py`<br>
  **Kết quả** <br>
 ### 📷 Hiển thị vài mẫu ảnh ngẫu nhiên
