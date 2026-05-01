@@ -28,7 +28,7 @@ B6: cách kiểm tra thư viện đã được cài gõ:
 pip list
 
 B7: chạy chương trình gõ:
-py train.py hoặc python train.py
+py src\train.py hoặc python src\train.py
 
 B8: thoát venv gõ: 
 deactivate
@@ -43,4 +43,10 @@ Tuy nhiên, trong môi trường lập trình thực tế khuyến khích sử d
 - Dễ làm việc nhóm và debug
 --> Mỗi project nên dùng một môi trường venv riêng.
 
+Thông tin liên hệ:
+Họ và tên sinh viên: Nguyễn Thành Trung
+Mã số sinh viên: 170122293
+Lớp: DX22TT8016
+Email: 170122293@rdi.edu.vn
+Phone/Zalo: 0816.221.299
  
