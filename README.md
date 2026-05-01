@@ -45,13 +45,13 @@
 ## 📌 Có thể chạy trên CMD hoặc Visual Studio Code <br>
 
 * _Trường hợp 1_: Chạy mô hình cơ bản. <br>
-`py knn_mnist.py`<br>
+`py src\knn_mnist.py`<br>
  **Kết quả** <br>
   
 ![Kết quả trường hợp 1](thesis/ket_qua_1.png)
 
 * _Trường hợp 2_: Tối ưu và phân tích tham số K, hiển thị ma trận nhầm lẫn. <br>
-`py train.py`<br>
+`py scr\train.py`<br>
  **Kết quả** <br>
 ### 📷 Hiển thị vài mẫu ảnh ngẫu nhiên
 Dữ liệu MNIST gồm các ảnh chữ số viết tay kích thước 28x28 pixel.  
