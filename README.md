@@ -171,3 +171,11 @@ Hiển thị ma trận nhầm lẫn dưới dạng hình ảnh đơn giản
 - Chuẩn hóa dữ liệu (scaling)
 - Dùng PCA giảm chiều
 - Thử SVM / CNN
+
+**Thông tin liên hệ**
+- Họ và tên sinh viên: Nguyễn Thành Trung
+- Mã số sinh viên: 170122293
+- Lớp: DX22TT8016
+- Email: 170122293@rdi.edu.vn
+- Phone: 0816.221.299
+
