@@ -11,7 +11,7 @@
 - Tạo môi trường `venv`.
 - Import các thư viện cần thiết từ tệp `requirements.txt`.
 - Tiến hành viết code tổng quát triển khai nội dung nghiên cứu cho ra dữ liệu cơ bản `F1-Score` , `Accuracy` , `Recall` , `Precision`.
-- Hiệu chỉnh `readme.md`.
+- Hiệu chỉnh `README.md`.
 
 **Tuần 3:** <br>
 - Tìm thêm tài liệu để cải thiện thuật toán.
@@ -19,9 +19,9 @@
 - Thêm thư viện `seaborn` và `openpyxl` để có các bảng báo cáo chỉ số chi tiết, trực quan hóa dữ liệu.
 - Hiệu chỉnh file `.docx`cập nhật thêm hình ảnh, nội dung.
 - Hiệu chỉnh `requirements.txt`, cập nhật thêm thư viện `seaborn` và `openpyxl`.
-- Hiệu chỉnh `readme.md` , cập nhật nội dung.
+- Hiệu chỉnh `README.md` , cập nhật nội dung.
 
 **Tuần 4:**
-- Hiệu chỉnh `readme.md`.
+- Hiệu chỉnh `README.md`.
 - Hiệu chỉnh `.docx`, cập nhật thêm hình ảnh, nội dung.
 - Sắp xếp lại các tệp thư mục theo đúng yêu cầu giảng viên.
