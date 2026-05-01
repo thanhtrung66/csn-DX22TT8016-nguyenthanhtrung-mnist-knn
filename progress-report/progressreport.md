@@ -25,3 +25,4 @@
 - Hiệu chỉnh `README.md`.
 - Hiệu chỉnh `.docx`, cập nhật thêm hình ảnh, nội dung.
 - Sắp xếp lại các tệp thư mục theo đúng yêu cầu giảng viên.
+- Update train.py
