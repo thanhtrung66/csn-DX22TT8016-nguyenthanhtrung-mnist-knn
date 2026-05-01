@@ -45,6 +45,7 @@
 ## 📌 Có thể chạy trên CMD hoặc Visual Studio Code <br>
 
 **Bước 1:** luôn nhớ Kích hoạt môi trường ảo trước khi khởi chạy: `venv\Scripts\activate`. <br>
+![kích hoạt venv](thesis/activate_venv.png) <br>
 
 **Bước 2:**
 * _Trường hợp 1_: <br>
