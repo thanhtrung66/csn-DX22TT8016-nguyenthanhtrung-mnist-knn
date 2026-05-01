@@ -1,4 +1,9 @@
-# Import các thư viện cần thiết
+import os
+# Tạo thư mục đầu ra nếu chưa có
+output_path = "thesis/abs"
+if not os.path.exists(output_path):
+    os.makedirs(output_path)
+# import các thư viện cần thiết
 from sklearn.datasets import fetch_openml              # Load dataset MNIST từ OpenML
 from sklearn.model_selection import train_test_split   # Chia dữ liệu train/test
 from sklearn.neighbors import KNeighborsClassifier     # Thuật toán KNN
@@ -29,7 +34,8 @@ for ax, idx in zip(axes, random_indices):
     ax.set_title(f"Label: {y.iloc[idx]}")                       # Hiển thị nhãn
     ax.axis('off')                                              # Tắt trục tọa độ
 
-plt.show()  # Hiển thị ảnh
+plt.draw() 
+plt.savefig("thesis/abs/5random_images.png") # lưu ảnh 5 số ngẫu nhiên vào thesis > abs
 
 # ====== KIỂM TRA PHÂN BỐ NHÃN ======
 counter = Counter(y)                 # Đếm số lượng mỗi chữ số
@@ -69,7 +75,7 @@ plt.xlabel("K")
 plt.ylabel("Accuracy")
 plt.grid()
 
-plt.savefig("accuracy_vs_k.png")  # Lưu ảnh biểu đồ
+plt.savefig("thesis/abs/accuracy_vs_k.png")  # Lưu ảnh biểu đồ vào tệp thesis > abs
 print("Saved accuracy_vs_k.png")
 
 # ====== CHỌN K TỐT NHẤT ======
@@ -109,8 +115,8 @@ report_dict = classification_report(y_test, y_pred, output_dict=True)
 # Chuyển thành DataFrame
 df_report = pd.DataFrame(report_dict).transpose()
 
-# Xuất báo cáo ra Excel
-df_report.to_excel("classification_report.xlsx", index=True)
+# Xuất báo cáo ra Excel lưu vào tệp thesis > abs
+df_report.to_excel("thesis/abs/classification_report.xlsx", index=True)
 print("Đã xuất file Excel thành công!")
 
 # ====== VẼ VÀ LƯU CONFUSION MATRIX ======
@@ -125,10 +131,8 @@ plt.title(f"Confusion Matrix (MNIST) - Best K: {best_k}")
 plt.xlabel("Predicted label")
 plt.ylabel("True label")
 
-plt.savefig("confusion_matrix.png")  # Lưu ảnh ma trận nhầm lẫn
+plt.savefig("thesis/abs/confusion_matrix.png")  # Lưu ảnh ma trận nhầm lẫn thesis > abs
 print("Saved confusion_matrix.png")
-
-plt.show()  # Hiển thị tất cả các biểu đồ đã vẽ
 
 # ====== VẼ HEATMAP (CONFUSION MATRIX) ======
 # Tính toán ma trận nhầm lẫn
@@ -149,9 +153,10 @@ plt.title(f"Heatmap Ma trận nhầm lẫn (MNIST) - Best K: {best_k}", fontsize
 plt.xlabel("Nhãn dự đoán (Predicted Label)", fontsize=12)
 plt.ylabel("Nhãn thực tế (True Label)", fontsize=12)
 
-# Lưu ảnh Heatmap
-plt.savefig("mnist_heatmap.png")
-print("Đã lưu mnist_heatmap.png")
+# Lưu ảnh Heatmap thesis > abs
+plt.savefig("thesis/abs/mnist_heatmap.png")
+print("Save mnist_heatmap.png")
 
-# Hiển thị biểu đồ
+# Hiển thị tất cả biểu đồ
+print("Generating and displaying visualizations...")
 plt.show()
