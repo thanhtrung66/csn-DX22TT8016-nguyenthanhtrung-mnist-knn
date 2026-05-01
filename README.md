@@ -48,7 +48,9 @@
 `py src\knn_mnist.py`<br>
  **Kết quả** <br>
   
-![Kết quả trường hợp 1](thesis/ket_qua_1.png)
+![Kết quả trường hợp 1](thesis/th1.png) <br>
+
+![Ma trận nhầm lẫn cơ bản](thesis/CF_1.png) <br>
 
 * _Trường hợp 2_: Tối ưu và phân tích tham số K, hiển thị ma trận nhầm lẫn. <br>
 `py scr\train.py`<br>
