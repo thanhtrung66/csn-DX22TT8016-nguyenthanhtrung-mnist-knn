@@ -21,14 +21,15 @@ B5: Cài thư viện
 - Cách 1 gõ:
 pip install numpy pandas scikit-learn matplotlib seaborn openpyxl
 
-- Cách2 (khuyên dùng): tạo tệp requirements.txt chứa các thư viện để cài 1 lần cho gọn gõ:
+- Cách2 (khuyên dùng): tạo tệp requirements.txt chứa các thư viện (numpy pandas scikit-learn matplotlib seaborn openpyxl) để cài 1 lần cho gọn gõ:
 pip install -r requirements.txt
 
 B6: cách kiểm tra thư viện đã được cài gõ:
-pip list
-
+pip list 
+# Kiểm tra danh sách có đủ numpy ; pandas ; scikit-learn ; matplotlib ; seaborn ; openpyxl
 B7: chạy chương trình gõ:
-py src\train.py hoặc python src\train.py
+py src\train.py hoặc src\python train.py
+# Kết quả (biểu đồ và file excel) sẽ tự động được lưu vào thư mục thesis/abs theo đúng cấu trúc đồ án.
 
 B8: thoát venv gõ: 
 deactivate
@@ -43,10 +44,4 @@ Tuy nhiên, trong môi trường lập trình thực tế khuyến khích sử d
 - Dễ làm việc nhóm và debug
 --> Mỗi project nên dùng một môi trường venv riêng.
 
-Thông tin liên hệ:
-Họ và tên sinh viên: Nguyễn Thành Trung
-Mã số sinh viên: 170122293
-Lớp: DX22TT8016
-Email: 170122293@rdi.edu.vn
-Phone/Zalo: 0816.221.299
  
