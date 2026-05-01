@@ -27,6 +27,7 @@ pip install -r requirements.txt
 B6: cách kiểm tra thư viện đã được cài gõ:
 pip list 
 # Kiểm tra danh sách có đủ numpy ; pandas ; scikit-learn ; matplotlib ; seaborn ; openpyxl
+
 B7: chạy chương trình gõ:
 py src\train.py hoặc src\python train.py
 # Kết quả (biểu đồ và file excel) sẽ tự động được lưu vào thư mục thesis/abs theo đúng cấu trúc đồ án.
