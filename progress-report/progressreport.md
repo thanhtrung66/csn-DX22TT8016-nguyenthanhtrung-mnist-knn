@@ -32,4 +32,5 @@
 - Sắp xếp lại các tệp thư mục theo đúng yêu cầu giảng viên.
 - Update `train.py`.
 - Update hình ảnh.
+- Update `.docx`.
 
