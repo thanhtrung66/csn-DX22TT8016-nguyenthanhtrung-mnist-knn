@@ -36,11 +36,13 @@
 - `openpyxl`<br>
 - `seaborn`<br>
 
-**⚙️ Hướng dẫn cài đặt nhanh**<br>
-- **Bước 1:** Tạo môi trường ảo: `python -m venv venv`.  <br>
-- **Bước 2:** Kích hoạt môi trường: `venv\Scripts\activate`. <br> 
-- **Bước 3:** Cài đặt thư viện: `pip install -r requirements.txt`. <br>  
-- **Bước 4:** Chạy chương trình: `py train.py`. <br>
+**⚙️ Hướng dẫn cài đặt**<br>
+- **Bước 1:** Tải tất cả các mục trong tệp `thesis; src, setup` về máy.  <br>
+- **Bước 2:** Đọc qua `guide.txt` trong mục `setup`.  <br>
+- **Bước 3:** Tạo môi trường ảo: `python -m venv venv`.  <br>
+- **Bước 4:** Kích hoạt môi trường: `venv\Scripts\activate`. <br> 
+- **Bước 5:** Cài đặt thư viện: `pip install -r requirements.txt`. <br>  
+- **Bước 6:** Chạy chương trình: `py src\train.py`. <br>
 
 ## 📌 Có thể chạy trên CMD hoặc Visual Studio Code <br>
 
