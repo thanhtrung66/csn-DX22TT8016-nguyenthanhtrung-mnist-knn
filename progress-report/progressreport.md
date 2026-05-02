@@ -12,6 +12,8 @@
 - Import các thư viện cần thiết từ tệp `requirements.txt`.
 - Tiến hành viết code tổng quát triển khai nội dung nghiên cứu cho ra dữ liệu cơ bản `F1-Score` , `Accuracy` , `Recall` , `Precision`.
 - Hiệu chỉnh `README.md`.
+- Update `train.py`, `knn_mnist`.
+- Update hình ảnh.
 
 **Tuần 3:** <br>
 - Tìm thêm tài liệu để cải thiện thuật toán.
@@ -20,11 +22,14 @@
 - Hiệu chỉnh file `.docx`cập nhật thêm hình ảnh, nội dung.
 - Hiệu chỉnh `requirements.txt`, cập nhật thêm thư viện `seaborn` và `openpyxl`.
 - Hiệu chỉnh `README.md` , cập nhật nội dung.
+- Update `train.py`.
+- Update hình ảnh.
+
 
 **Tuần 4:**
 - Hiệu chỉnh `README.md`.
 - Hiệu chỉnh `.docx`, cập nhật thêm hình ảnh, nội dung.
 - Sắp xếp lại các tệp thư mục theo đúng yêu cầu giảng viên.
-- Update train.py
-- Update hình ảnh
+- Update `train.py`.
+- Update hình ảnh.
 
