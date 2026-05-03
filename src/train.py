@@ -17,7 +17,7 @@ from collections import Counter                        # Đếm số lượng ph
 import pandas as pd                                    # Xử lý dữ liệu dạng bảng
 
 # ====== LOAD DATA ======
-print("Loading MNIST...")
+print("--- Loading MNIST... ---")
 mnist = fetch_openml('mnist_784', version=1)  # Tải dataset MNIST (70,000 ảnh 28x28)
 
 X = mnist.data                                # Dữ liệu ảnh (dạng vector 784 chiều)
@@ -46,7 +46,7 @@ counter = Counter(y)                 # Đếm số lượng mỗi chữ số
 counter = counter.most_common()      # Sắp xếp theo số lượng giảm dần
 counter_df = pd.DataFrame(counter, columns=['Số', 'Số lượng'])  # Chuyển thành bảng
 
-print("\nPhân bố nhãn:")
+print("\n--- Phân bố nhãn: ---")
 print(counter_df)  # In ra bảng phân bố
 
 # ====== CHIA DATA ======
@@ -58,7 +58,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 k_values = range(1, 11)   # Thử K từ 1 đến 10
 accuracies = []           # Lưu accuracy tương ứng
 
-print("\nTesting K values...")
+print("\n--- Testing K values... ---")
 
 # Lặp qua từng giá trị K
 for k in k_values:
@@ -84,10 +84,10 @@ print(f"Saved accuracy_vs_k.png to {output_path}")
 
 # ====== CHỌN K TỐT NHẤT ======
 best_k = k_values[accuracies.index(max(accuracies))]  # Lấy K có accuracy cao nhất
-print(f"Best K = {best_k}")
+print(f"--- Best K = {best_k} ---")
 
 # ====== HUẤN LUYỆN LẠI VỚI K TỐT NHẤT ======
-print(f"\nTraining final model with Best K = {best_k}...")
+print(f"\n==> Training final model with Best K = {best_k}...")
 model = KNeighborsClassifier(n_neighbors=best_k)
 model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
@@ -102,15 +102,15 @@ recall = recall_score(y_test, y_pred, average='macro')       # Tính Recall trun
 f1 = f1_score(y_test, y_pred, average='macro')               # Tính F1-score trung bình cộng các lớp
 
 # In kết quả ra màn hình Console
-print("-" * 30)
-print(f"Accuracy (Tổng quát): {accuracy:.4f}") 
-print(f"Precision (Trung bình): {precision:.4f}")
-print(f"Recall (Trung bình): {recall:.4f}")
-print(f"F1-score (Trung bình): {f1:.4f}")
-print("-" * 30)
+print("=" * 30)
+print(f"- Accuracy (Tổng quát): {accuracy:.4f}") 
+print(f"- Precision (Trung bình): {precision:.4f}")
+print(f"- Recall (Trung bình): {recall:.4f}")
+print(f"- F1-score (Trung bình): {f1:.4f}")
+print("=" * 30)
 
 # Xuất bảng báo cáo chi tiết cho từng chữ số (từ 0 đến 9)
-print("\nBáo cáo chi tiết từng lớp (Classification Report):")
+print("\n--- Báo cáo chi tiết từng lớp (Classification Report): ---")
 print(classification_report(y_test, y_pred))
 
 # Lấy report dạng dict
@@ -118,6 +118,7 @@ report_dict = classification_report(y_test, y_pred, output_dict=True)
 
 # Chuyển thành DataFrame
 df_report = pd.DataFrame(report_dict).transpose()
+print("=" * 30)
 
 # Xuất báo cáo ra Excel lưu vào tệp thesis > abs
 df_report.to_excel(os.path.join(output_path, "classification_report.xlsx"), index=True) # xuất file excel các chỉ số vào thesis > abs
