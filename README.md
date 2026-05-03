@@ -155,18 +155,19 @@ Tính đầy đủ các chỉ số đánh giá: <br>
 - Dùng scikit-learn chuẩn.
 - Áp dụng Train/test split (80/20).
 
-**Ưu điểm:**<br>
+**Ưu điểm:** <br>
 - Có thử nhiều _K_.
+- Đưa tất cả giá trị pixel về khoảng [0, 1]; giúp mô hình KNN hoạt động ổn định và chính xác hơn.
 - Có quy trình tối ưu rõ ràng.
 - Trực quan hóa dữ liệu tốt (ảnh + biểu đồ nhiệt).
 - _Confusion Matrix_ hiển thị chuyên nghiệp.
 - Hiển thị đủ các chỉ số đánh giá mô hình.
 - Có báo cáo chi tiết bằng Excel.
 
-**Nhược điểm:**<br>
+**Nhược điểm:** <br>
 - Thời gian chạy lâu hơn do thử nhiều giá trị _K_
 
-🎯 **Kết luận**<br>
+🎯 **Kết luận** <br>
 - File: `knn_mnist.py` phù hợp để minh họa đơn giản thuật toán. <br>
 - File: `train.py` phù hợp để làm đồ án và báo cáo chuyên sâu.
 
