@@ -23,6 +23,8 @@ mnist = fetch_openml('mnist_784', version=1)  # Tải dataset MNIST (70,000 ản
 X = mnist.data                                # Dữ liệu ảnh (dạng vector 784 chiều)
 y = mnist.target.astype(int)                  # Nhãn (0–9), chuyển về số nguyên
 
+X = X / 255.0  # dòng này để chuẩn hóa dữ liệu về khoảng [0-1]
+
 # ====== HIỂN THỊ 5 ẢNH MẪU ======
 fig, axes = plt.subplots(1, 5, figsize=(10, 5))  # Tạo 1 hàng 5 cột để hiển thị ảnh
 
