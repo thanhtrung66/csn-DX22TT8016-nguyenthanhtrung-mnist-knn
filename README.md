@@ -5,10 +5,9 @@
 
 ## ⚙️ Công cụ sử dụng<br>
 
-**Ngôn ngữ lập trình**
-- Python. <br>
-- Visual Studio Code. <br>
-- Lưu ý: yêu cầu **Python 3.11** và trở lên và **Visual Studio Code** mới nhất để đảm bảo tính tương thích. <br>
+- **Ngôn ngữ lập trình** : Python. <br>
+- **Môi trường:** Visual Studio Code. <br>
+  _**Lưu ý:**_ yêu cầu **Python 3.11** và trở lên và **Visual Studio Code** mới nhất để đảm bảo tính tương thích. <br>
 
 ## 📦 Thư viện sử dụng
 - `numpy`: xử lý dữ liệu số.
