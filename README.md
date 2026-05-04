@@ -7,7 +7,8 @@
 
 **Ngôn ngữ lập trình**
 - Python. <br>
-- Lưu ý: yêu cầu **Python 3.11** trở lên để đảm bảo tương thích. <br>
+- Visual Studio Code. <br>
+- Lưu ý: yêu cầu **Python 3.11** và trở lên và **Visual Studio Code** mới nhất để đảm bảo tính tương thích. <br>
 
 ## 📦 Thư viện sử dụng
 - `numpy`: xử lý dữ liệu số.
