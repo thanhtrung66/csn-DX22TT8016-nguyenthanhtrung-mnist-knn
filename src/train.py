@@ -71,7 +71,7 @@ for k in k_values:
     
     print(f"K = {k}, Accuracy = {acc}")          # In kết quả
 
-# ====== VẼ BIỂU ĐỒ ======
+# ====== VẼ BIỂU ĐỒ accuracy_vs_k======
 plt.figure()
 plt.plot(k_values, accuracies, marker='o')  # Vẽ đồ thị Accuracy theo K
 plt.title("Accuracy vs K")
