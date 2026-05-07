@@ -182,6 +182,11 @@ Tính đầy đủ các chỉ số đánh giá: <br>
 - Dùng Principal Component Analysis (PCA) giảm chiều.
 - Thử Support Vector Machine (SVM) / Convolutional Neural Network (CNN).
 
+**Video hướng dẫn chạy code:** <br>
+- Xem hướng dẫn tại mục **Video** tại link Google Drive
+- ---> https://drive.google.com/drive/folders/1EYScWrTeHu1VRkbxXD4I95ynIVR0k804?usp=sharing
+
+
 **Thông tin liên hệ**
 - Họ và tên sinh viên: Nguyễn Thành Trung
 - Mã số sinh viên: 170122293
