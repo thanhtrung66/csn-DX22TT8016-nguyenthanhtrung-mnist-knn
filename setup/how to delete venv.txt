@@ -1,0 +1,18 @@
+Dưới đây là các bước để Xóa và cài lại từ đầu:
+
+1. Hủy kích hoạt (Deactivate)
+Nếu đang ở trong môi trường ảo (có chữ (venv) ở đầu dòng lệnh), hãy thoát ra bằng cách gõ: deactivate
+
+2. Xóa thư mục venv. Chỉ cần xóa toàn bộ thư mục môi trường ảo đó đi.
+
+- cách 1: Trên Windows (Sử dụng Command Prompt): rmdir /s /q venv
+
+- Cách 2: Nếu dùng VS Code (PowerShell): Remove-Item -Recurse -Force venv HOẶC gọi cmd /c "rmdir /s /q venv"
+
+- cách 3: Trên macOS/Linux hoặc Git Bash: rm -rf venv
+
+(Lưu ý: Thay venv bằng tên thư mục bạn đã đặt nếu bạn đặt tên khác).
+
+3. Cài đặt venv lại từ đầu
+
+==> Xem guide.txt
