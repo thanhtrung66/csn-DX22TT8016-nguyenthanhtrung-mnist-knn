@@ -47,7 +47,7 @@
 ## 📌 Có thể chạy trên CMD hoặc Visual Studio Code <br>
 
 **Bước 1:** luôn nhớ Kích hoạt môi trường ảo trước khi khởi chạy: `venv\Scripts\activate`. <br>
-![kích hoạt venv](thesis/activate_venv.png) <br>
+![kích hoạt venv](thesis/abs/activate_venv.png) <br>
 
 **Bước 2:**
 * _Trường hợp 1_: <br>
@@ -55,9 +55,9 @@ Chạy mô hình cơ bản. <br>
 `py src\knn_mnist.py`<br>
  **Kết quả** <br>
   
-![Kết quả trường hợp 1](thesis/th1.png) <br>
+![Kết quả trường hợp 1](thesis/abs/th1.png) <br>
 
-![Ma trận nhầm lẫn cơ bản](thesis/CF_1.png) <br>
+![Ma trận nhầm lẫn cơ bản](thesis/abs/CF_1.png) <br>
 
 * _Trường hợp 2_: <br> 
 Tối ưu và phân tích tham số K, hiển thị ma trận nhầm lẫn. <br>
@@ -66,10 +66,10 @@ Tối ưu và phân tích tham số K, hiển thị ma trận nhầm lẫn. <br>
 ### 📷 Hiển thị vài mẫu ảnh ngẫu nhiên
 Dữ liệu MNIST gồm các ảnh chữ số viết tay kích thước 28x28 pixel.  
 Để trực quan hóa dữ liệu, ta hiển thị ngẫu nhiên 5 ảnh từ dataset. <br>
-![Mẫu ảnh](thesis/anh_ngau_nhien.png)
+![Mẫu ảnh](thesis/abs/anh_ngau_nhien.png)
 
 ## 📊 Kiểm tra phân bố nhãn
-![phân bố nhãn](thesis/phan_bo_nhan.png)
+![phân bố nhãn](thesis/abs/phan_bo_nhan.png)
 <br>
 Việc kiểm tra phân bố nhãn giúp đánh giá mức độ cân bằng của dữ liệu. Nếu dữ liệu bị mất cân bằng, mô hình KNN có thể bị thiên lệch về các lớp có nhiều mẫu hơn, ảnh hưởng đến độ chính xác tổng thể và khả năng dự đoán các lớp thiểu số. <br>
 
@@ -84,7 +84,7 @@ Mặc dù có sự chênh lệch nhẹ giữa các lớp, nhưng dataset MNIST n
 
 ## 📈 Tối ưu tham số $K$
 Biểu đồ dưới đây thể hiện độ chính xác theo các giá trị K khác nhau:
-![Accuracy vs K](thesis/accuracy_vs_k.png)
+![Accuracy vs K](thesis/abs/accuracy_vs_k.png)
 
 => _Kết quả cho thấy tuy K = 1 cho độ chính xác cao nhất, nhưng mô hình có thể nhạy với nhiễu (noise) và dễ bị overfitting. **Trong thực tế, các giá trị K lớn hơn (như 3 hoặc 5) thường được cân nhắc để đảm bảo tính ổn định**_.
 
@@ -97,20 +97,20 @@ Trong đồ án này, sinh viên đã thực hiện khảo sát giá trị _K_ t
     - **Hiệu năng:** Vì KNN là thuật toán "Lazy Learning", việc tăng _K_ quá lớn sẽ làm tăng khối lượng tính toán và thời gian dự đoán mà không cải thiện đáng kể độ chính xác.
     - **Tránh Underfitting:** Khi _K_ quá lớn, ranh giới phân loại giữa các chữ số bị làm mờ, dẫn đến mô hình bị đơn giản hóa quá mức.
 
-*Kết quả khảo sát chi tiết có thể xem tại tệp `thesis/accuracy_vs_k.png`.*
+*Kết quả khảo sát chi tiết có thể xem tại tệp `thesis/abs/accuracy_vs_k.png`.*
 
 ## 📷 Ma trận nhầm lẫn.
 Ma trận nhầm lẫn giúp đánh giá chi tiết khả năng phân loại của mô hình: <br>
-![Confusion Matrix](thesis/confusion_matrix.png)
+![Confusion Matrix](thesis/abs/confusion_matrix.png)
 
 ## 📷 Biểu đồ nhiệt ma trận nhầm lẫn.
 - Thư viện `Seaborn`: Giúp việc điều chỉnh màu sắc và hiển thị thanh thang đo (color bar) bên cạnh tự động và đẹp mắt hơn. <br>
 - Thông số `annot=True`: Đảm bảo các con số cụ thể xuất hiện trong từng ô để bạn dễ dàng báo cáo số liệu chính xác. <br>
 - Màu sắc `YlGnBu`: Đây là dải màu chuyển từ nhạt sang đậm rất trực quan; những ô có màu càng đậm đồng nghĩa với việc số lượng mẫu rơi vào đó càng nhiều. <br>
-![Heatmap](thesis/heatmap.png) <br>
+![Heatmap](thesis/abs/heatmap.png) <br>
 
 ## Bảng nhận xét và đánh giá
-![Nhận xét biểu đồ CF](thesis/danh_gia_CF.png) <br>
+![Nhận xét biểu đồ CF](thesis/abs/danh_gia_CF.png) <br>
 
 ## 📊 Analysis<br>
 **1. Nhận xét về K:** <br>
